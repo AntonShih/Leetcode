@@ -49,10 +49,11 @@ def isHappy(n):
 def isHappy2(n):
     slow = n
     fast = nextSquareSum(n)
+    
     while slow != fast:
         slow = nextSquareSum(slow)
         fast = nextSquareSum(nextSquareSum(fast))
-    
+        # slow在原本的位置走一步，fast在已經走一步之後再走兩步
     return slow == 1
 
 print(f'Is 19 a happy number: {isHappy2(19)}')
