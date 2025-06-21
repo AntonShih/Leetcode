@@ -29,6 +29,7 @@
 # 2^2 + 0^2 = 4
 # '''
 
+
 def nextSquareSum(n):
     sum = 0
     while n > 0:
